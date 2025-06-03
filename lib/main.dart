@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'screens/products_screen.dart';
-import 'screens/orders_screen.dart';
-import 'screens/contact_screen.dart';
-import 'screens/login_screen.dart';
-import 'screens/custom_order_screen.dart';
+import 'screens/user/products_screen.dart';
+import 'screens/user/orders_screen.dart';
+import 'screens/user/contact_screen.dart';
+import 'screens/auth/login_screen.dart';
+import 'screens/user/custom_order_screen.dart';
 import 'config/config.dart';
 
 void main() {
@@ -16,6 +16,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bengkel Las App',
       theme: ThemeData(
         primarySwatch: Colors.blue,

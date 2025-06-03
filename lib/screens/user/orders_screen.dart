@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/config.dart';
+import '../../config/config.dart';
 
 class OrdersScreen extends StatelessWidget {
   const OrdersScreen({super.key});
@@ -19,10 +19,7 @@ class OrdersScreen extends StatelessWidget {
           ),
         ),
         body: TabBarView(
-          children: [
-            _buildActiveOrders(),
-            _buildOrderHistory(),
-          ],
+          children: [_buildActiveOrders(), _buildOrderHistory()],
         ),
       ),
     );
@@ -76,10 +73,7 @@ class OrdersScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 8.0),
-            Text(
-              order['item'],
-              style: const TextStyle(fontSize: 16.0),
-            ),
+            Text(order['item'], style: const TextStyle(fontSize: 16.0)),
             const SizedBox(height: 4.0),
             Text(
               order['price'],

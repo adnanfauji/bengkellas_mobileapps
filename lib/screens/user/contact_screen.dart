@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../config/config.dart';
+import '../../config/config.dart';
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
@@ -15,9 +15,7 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Kontak Kami'),
-      ),
+      appBar: AppBar(title: const Text('Kontak Kami')),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -171,11 +169,7 @@ class ScheduleRow extends StatelessWidget {
   final String day;
   final String hours;
 
-  const ScheduleRow({
-    super.key,
-    required this.day,
-    required this.hours,
-  });
+  const ScheduleRow({super.key, required this.day, required this.hours});
 
   @override
   Widget build(BuildContext context) {
@@ -183,10 +177,7 @@ class ScheduleRow extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(day),
-          Text(hours),
-        ],
+        children: [Text(day), Text(hours)],
       ),
     );
   }

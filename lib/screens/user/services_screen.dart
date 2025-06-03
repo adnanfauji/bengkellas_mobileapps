@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/config.dart';
+import '../../config/config.dart';
 
 class ServicesScreen extends StatelessWidget {
   const ServicesScreen({super.key});
@@ -7,9 +7,7 @@ class ServicesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Layanan Las'),
-      ),
+      appBar: AppBar(title: const Text('Layanan Las')),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
@@ -75,10 +73,7 @@ class ServicesScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 16.0),
           child: Text(
             title,
-            style: const TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-            ),
+            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
           ),
         ),
         ...services.map((service) => _buildServiceCard(service)).toList(),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../config/config.dart';
+import '../../config/config.dart';
 
 class CustomOrderScreen extends StatefulWidget {
   const CustomOrderScreen({super.key});
@@ -26,9 +26,7 @@ class _CustomOrderScreenState extends State<CustomOrderScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Pesan Custom'),
-      ),
+      appBar: AppBar(title: const Text('Pesan Custom')),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Form(
